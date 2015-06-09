@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+table.youtubeWidgetList {width: 100%;}
+		tr.youtubeWidgetListItem td {padding: 5px;}
+		tr.youtubeWidgetListItem a {color: #333; text-decoration: none;}
+			a.youtubeWidgetListItemTitleChannel {font-weight: bold;}
+		td.youtubeWidgetListItemDate {color: #888; text-align: right;}
+
+div.youtubeWidget p.error {color: #FF0000; font-size: 2em; text-align: center;}

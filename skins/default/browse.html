@@ -1,0 +1,10 @@
+<load target="./css/widget.css" cond="$colorset != 'layout'" />
+
+<div class='youtubeWidget'>
+	<table class='youtubeWidgetList'>
+		<tr class='youtubeWidgetListItem' loop="$videos=>$val">
+			<td class='youtubeWidgetListItemTitle'><a class='youtubeWidgetListItemTitleChannel' href='//www.youtube.com/channel/{$val[snippet][channelId]}' target='_blank'>{$val[snippet][channelTitle]}</a> | <a href='//www.youtube.com/watch?v={$val[snippet][resourceId][videoId]}'>{$val[snippet][title]}</a></td>
+			<td class='youtubeWidgetListItemDate'>{date("Y.m.d h:m:s", $val[snippet][kst])}</td>
+		</tr>
+	</table>
+</div>

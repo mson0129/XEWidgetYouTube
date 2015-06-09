@@ -1,0 +1,14 @@
+<load target="./css/widget.css" cond="$colorset != 'layout'" />
+
+<div class='youtubeWidget'>
+	<ul class='youtubeWidgetList'>
+		<block loop="$videos=>$val">
+		<li class='youtubeWidgetListItem'>
+			<a href='{$val[url]}' <!--@if($outlink)-->target='_blank'<!--@end-->><img src='{$val[snippet][thumbnails][high][url]}' /></a>
+			<p class='youtubeWidgetListItemTitle'><a href='{$val[url]}' <!--@if($outlink)-->target='_blank'<!--@end-->>{$val[snippet][title]}</a></p>
+			<p class='youtubeWidgetListItemDescription'>{nl2br($val[snippet][description])}</p>
+			<p class='youtubeWidgetListItemDate'>{date("Y.m.d h:i:s", $val[snippet][kst])}</p>
+		</li>
+		</block>
+	</ul>
+</div>

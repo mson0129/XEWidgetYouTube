@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+ul.youtubeWidgetList {display: block; width: 100%; overflow: auto; white-space: nowrap;}
+li.youtubeWidgetListItem {display: inline-block; margin: 10px; width: 200px; height: 300px; border: 1px solid #CCC; box-shadow: 0 0 5px #CCC; white-space: normal; vertical-align:top;}
+	li.youtubeWidgetListItem img {width: 100;}
+	li.youtubeWidgetListItem p {padding: 10px;}
+		li.youtubeWidgetListItem p {}
+		p.youtubeWidgetListItemTitle a {color: #333;}
+		p.youtubeWidgetListItemDescription {max-height: 2em; overflow: hidden; color: #888;}
+		p.youtubeWidgetListItemDate {color: #FFF;}

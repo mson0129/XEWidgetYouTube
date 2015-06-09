@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget version="0.2">
+	<title xml:lang="ko">유튜브 위젯</title>
+	<title xml:lang="en">YouTube Widget</title>
+	<description xml:lang="ko">유튜브에 있는 특정 채널 또는 플레이리스트의 최상위 항목부터 순차대로 가져와서 보여줍니다.</description>
+	<description xml:lang="en">Get videos from a channel or a playlist in YouTube.com.</description>
+    <version>1.0</version>
+    <date>2015-06-10</date>
+    <author email_address="mson0129@gmail.com" link="http://www.studio2b.kr/">
+		<name xml:lang="ko">Studio2b</name>
+		<name xml:lang="en">Studio2b</name>
+	</author>
+    <extra_vars>
+		<group>
+			<title xml:lang="ko">추출 대상</title>
+			<title xml:lang="en">Target</title>
+			<var id="mid_id" type="mid">
+				<name xml:lang="ko">유튜브 모듈</name>
+                <name xml:lang="en">YouTube Module</name>
+			</var>
+			<var id="api_key" type="text">
+				<name xml:lang="ko">API 키</name>
+                <name xml:lang="en">API Key</name>
+			</var>
+			<var id="playlist_id" type="text">
+				<name xml:lang="ko">채널/재생목록 ID</name>
+                <name xml:lang="en">Channel/Playlist ID</name>
+			</var>
+			<var id="items" type="text">
+				<name xml:lang="ko">표시할 개수</name>
+                <name xml:lang="en">The number of items</name>
+			</var>
+		</group>
+    </extra_vars>
+</widget>

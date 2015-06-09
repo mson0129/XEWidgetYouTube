@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin version="0.2">
+    <title xml:lang="ko">유튜브 위젯 기본 스킨</title>
+    <title xml:lang="en">YouTube Widget Default Skin</title>
+    <description xml:lang="ko">Content 위젯 기본 스킨 입니다.</description>
+    <description xml:lang="en">This is a default skin of YouTube widget</description>
+    <version>1.0</version>
+    <date>2015-06-10</date>
+    <link>http://www.studio2b.kr/</link>
+    <author email_address="mson0129@gmail.com" link="http://www.studio2b.kr/">
+        <name xml:lang="ko">Studio2b</name>
+        <name xml:lang="jp">Studio2b</name>
+        <name xml:lang="en">Studio2b</name>
+        <name xml:lang="vi">Studio2b</name>
+        <name xml:lang="zh-CN">Studio2b</name>
+        <name xml:lang="zh-TW">Studio2b</name>
+        <name xml:lang="tr">Studio2b</name>
+    </author>
+    <colorset>
+        <color name="white">
+            <title xml:lang="ko">흰색 바탕용</title>
+            <title xml:lang="jp">白い背景用</title>
+            <title xml:lang="zh-CN">白色背景</title>
+            <title xml:lang="en">White Background</title>
+            <title xml:lang="vi">Nền sáng</title>
+            <title xml:lang="zh-TW">白色背景</title>
+            <title xml:lang="tr">Beyaz Arkaplan</title>
+        </color>
+    </colorset>
+</skin>

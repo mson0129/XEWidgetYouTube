@@ -4,8 +4,8 @@
 	<title xml:lang="en">YouTube Widget</title>
 	<description xml:lang="ko">유튜브에 있는 특정 채널 또는 플레이리스트의 최상위 항목부터 순차대로 가져와서 보여줍니다.</description>
 	<description xml:lang="en">Get videos from a channel or a playlist in YouTube.com.</description>
-    <version>1.0.1</version>
-    <date>2015-06-10</date>
+    <version>1.1.0.</version>
+    <date>2015-07-08</date>
     <author email_address="mson0129@gmail.com" link="http://www.studio2b.kr/">
 		<name xml:lang="ko">Studio2b</name>
 		<name xml:lang="en">Studio2b</name>

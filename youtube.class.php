@@ -73,7 +73,7 @@ class youtube extends WidgetHandler {
 	protected function getRealPlaylistId($apiKey, $playlistId) {
 		$youtube = new XFYoutube(null, $apiKey);
 		if(!is_null($apiKey)) {
-			$return = !is_null($playlistId) ? $playlistId : (!is_null($this->module_info->playlist_id) ? $this->module_info->playlist_id : "PLmtapKaZsgZt3g_uAPJbsMWdkVsznn_2R"); //실시간 인기 동영상 - 한국
+			$return = empty($playlistId) ? "PLmtapKaZsgZt3g_uAPJbsMWdkVsznn_2R" : $playlistId;
 			$result = $youtube->playlistItems->browse("id", null, $return, 0);
 			if($result===false) {
 				$channel = $youtube->channels->browse("contentDetails", null, $return);
@@ -91,7 +91,7 @@ class youtube extends WidgetHandler {
 			}
 			unset($result, $channel);
 		} else {
-			$return = false;
+			$return = false; //실시간 인기 동영상 - 한국
 		}
 		return $return;
 	}

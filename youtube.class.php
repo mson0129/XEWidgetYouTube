@@ -6,10 +6,12 @@
 //Michael Son(mson0129@gmail.com)
 //10JUN2015(1.0.0.) - This file is newly created.
 //08JUL2015(1.1.0.) - The way to read module infomation is changed From XE Query -> XEModuleModule->getModuleInfoByModuleSrl();. And Some functions written for XpressEngine are move from XFYoutube.class to here.
+//09JUL2015(1.1.1.) - XFCurl collision with Instagram Widget is fixed.
 class youtube extends WidgetHandler {
 	function proc($args) {
 		//xFacility2014 - including the part of frameworks
-		require_once($this->widget_path."XFCurl.class.php");
+		if(class_exists("XFCurl")===false)
+			require_once($this->widget_path."XFCurl.class.php");
 		require_once($this->widget_path."XFYoutube.class.php");
 		require_once($this->widget_path."XFYoutubeActivities.class.php");
 		require_once($this->widget_path."XFYoutubeChannels.class.php");

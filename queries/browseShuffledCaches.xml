@@ -1,0 +1,18 @@
+<query id='browseShuffledCaches' action='select'>
+	<tables>
+		<table name='youtube_videos' />
+	</tables>
+	<columns>
+		<column name='*' />
+	</columns>
+	<conditions>
+		<condition operation='in' column='id' var='id' />
+		<condition operation='in' column='no' var='no' pipe="and" />
+	</conditions>
+	<navigation>
+		<index var='index' default='no' order='order' />
+		<list_count var='listCount' default='20' />
+		<page_count var='pageCount' default='1' />
+		<page var='page' default='1' />
+	</navigation>
+</query>

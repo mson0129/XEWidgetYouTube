@@ -79,10 +79,12 @@ class youtube extends WidgetHandler {
 			if(is_array($playlistIds))
 				$videos[$key][url] .= "&category=".array_search($val[snippet][playlistId], $playlistIds);
 		}
+		Context::set("playlistIds", $playlistIds);
 		Context::set("videos", $videos);
 		$tplPath = sprintf("%sskins/%s/", $this->widget_path, (!is_null($args->skin) &&  $args->skin!="" && is_dir(sprintf("%sskins/%s/", $this->widget_path, $args->skin))) ? $args->skin : "default");
 		$tplFile = "browse";
 		Context::set("colorset", $args->colorset);
+		Context::set("popup", $args->popup);
 		$oTemplate = &TemplateHandler::getInstance();
 		//var_dump(sprintf("%.9fs", microtime(true)-$this->startTime)); //ProcessingTime
 		return $oTemplate->compile($tplPath, $tplFile);

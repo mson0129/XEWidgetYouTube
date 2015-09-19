@@ -1,10 +1,13 @@
 @charset "utf-8";
 
 ul.youtubeWidgetList {display: block; width: 100%; overflow: auto; white-space: nowrap;}
-li.youtubeWidgetListItem {display: inline-block; margin: 10px; width: 200px; height: 300px; border: 1px solid #CCC; box-shadow: 0 0 5px #CCC; white-space: normal; vertical-align:top; border-radius: 10px; overflow: hidden;}
+li.youtubeWidgetListItem {display: inline-block; position: relative; margin: 10px; width: 200px; height: 300px; border: 1px solid #CCC; background-color: #FFF; box-shadow: 0 0 5px #CCC; white-space: normal; vertical-align:top; border-radius: 10px; overflow: hidden;}
 	li.youtubeWidgetListItem img {width: 100%; border-radius: 10px 10px 0 0;}
 	li.youtubeWidgetListItem p {padding: 10px;}
 		li.youtubeWidgetListItem p {}
 		p.youtubeWidgetListItemTitle a {color: #333;}
 		p.youtubeWidgetListItemDescription {max-height: 2em; overflow: hidden; color: #888;}
 		p.youtubeWidgetListItemDate {color: #FFF;}
+		p.youtubeWidgetListItemPopup {}
+			p.youtubeWidgetListItemPopup > a {display: block; position: absolute; bottom: 10px; right: 10px; width: 1em; height: 1em; padding: 10px; border-radius: 2em; background-color: #888; color: #FFF;}
+				p.youtubeWidgetListItemPopup > a > i {vertical-align: 1em;}

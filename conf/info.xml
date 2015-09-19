@@ -4,8 +4,8 @@
 	<title xml:lang="en">YouTube Widget</title>
 	<description xml:lang="ko">유튜브에 있는 특정 채널 또는 플레이리스트의 최상위 항목부터 순차대로 가져와서 보여줍니다.</description>
 	<description xml:lang="en">Get videos from a channel or a playlist in YouTube.com.</description>
-	<version>1.2.0.</version>
-	<date>2015-07-10</date>
+	<version>1.3.0.</version>
+	<date>2015-09-20</date>
 	<author email_address="mson0129@gmail.com" link="http://www.studio2b.kr/">
 		<name xml:lang="ko">Studio2b</name>
 		<name xml:lang="en">Studio2b</name>
@@ -42,6 +42,20 @@
 					<value>Y</value>
 					<name xml:lang="ko">무작위</name>
 					<name xml:lang="en">Shuffle</name>
+				</options>
+			</var>
+			<var id="popup" type="select">
+				<name xml:lang="ko">팝업 버튼</name>
+				<name xml:lang="en">Pop-up Button</name>
+				<options>
+					<value>N</value>
+					<name xml:lang="ko">나타내지 않음</name>
+					<name xml:lang="en">N/A</name>
+				</options>
+				<options>
+					<value>Y</value>
+					<name xml:lang="ko">나타냄</name>
+					<name xml:lang="en">Available</name>
 				</options>
 			</var>
 		</group>

@@ -1,4 +1,5 @@
 <load target="./css/widget.css" cond="$colorset != 'layout'" />
+<load target="./js/widget-youtube-card.js" />
 
 <div class='youtubeWidget'>
 	<ul class='youtubeWidgetList'>
@@ -8,6 +9,11 @@
 			<p class='youtubeWidgetListItemTitle'><a href='{$val[url]}' <!--@if($outlink)-->target='_blank'<!--@end-->>{$val[snippet][title]}</a></p>
 			<p class='youtubeWidgetListItemDescription'>{nl2br($val[snippet][description])}</p>
 			<p class='youtubeWidgetListItemDate'>{date("Y.m.d h:i:s", $val[snippet][kst])}</p>
+			<!--@if($popup=="Y")-->
+			<p class='youtubeWidgetListItemPopup'>
+				<a href='#' onClick='openYoutubePlayer("{$val[snippet][resourceId][videoId]}", "{$val[snippet][playlistId]}")'><i class='xi-external-link'></i></a>
+			</p>
+			<!--@end-->
 		</li>
 		</block>
 	</ul>
